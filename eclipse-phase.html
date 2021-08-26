@@ -131,6 +131,13 @@
                     <div class="col-md-5 col-lg-4">
                     <h4 class="d-flex justify-content-between align-items-center mb-3">Aptitudes</h4>
                     <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between lh-sm©">
+                            <div>
+                                <h6 class="my-0">Astuces (SAV)</h6>
+                                <small class="text-muted">Savvy</small>
+                            </div>
+                            <span class="text-muted">20/60</span>
+                        </li>
                         <li class="list-group-item d-flex justify-content-between lh-sm">
                             <div>
                                 <h6 class="my-0">Cognition (COG)</h6>
@@ -149,13 +156,6 @@
                             <div>
                                 <h6 class="my-0">R&eacute;flexes (REF)</h6>
                                 <small class="text-muted">Reflexes</small>
-                            </div>
-                            <span class="text-muted">20/60</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between lh-sm©">
-                            <div>
-                                <h6 class="my-0">Astuces (SAV)</h6>
-                                <small class="text-muted">Savvy</small>
                             </div>
                             <span class="text-muted">20/60</span>
                         </li>
@@ -193,17 +193,17 @@
                         </li>
                         <li class="list-group-item d-flex justify-content-between lh-sm">
                             <div>
-                                <h6 class="my-0">Seuil traumatique</h6>
-                                <small class="text-muted">Trauma Threshold</small>
-                            </div>
-                            <span class="text-muted">6</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between lh-sm">
-                            <div>
                                 <h6 class="my-0">Sant&eacute; mentale</h6>
                                 <small class="text-muted">Insanity Rating</small>
                             </div>
                             <span class="text-muted">60</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">Seuil traumatique</h6>
+                                <small class="text-muted">Trauma Threshold</small>
+                            </div>
+                            <span class="text-muted">6</span>
                         </li>
                     </ul>
                 </div>
@@ -222,10 +222,10 @@
                             <small class="text-muted">(Gears)</small>
                         </button>
                     </li>
-                    <li class="nav-item" role="reputation">
-                        <button class="nav-link" id="reputation-tab" data-bs-toggle="tab" data-bs-target="#reputation" type="button" role="tab" aria-controls="reputation" aria-selected="false">
-                            R&eacute;putation
-                            <small class="text-muted">(Reputation)</small>
+                    <li class="nav-item" role="morph-tab">
+                        <button class="nav-link" id="morph-tab" data-bs-toggle="tab" data-bs-target="#morph" type="button" role="tab" aria-controls="morph" aria-selected="false">
+                            Morph
+                            <small class="text-muted">(Morph)</small>
                         </button>
                     </li>
                     <li class="nav-item" role="notes-tab">
@@ -234,10 +234,10 @@
                             <small class="text-muted">(Notes)</small>
                         </button>
                     </li>
-                    <li class="nav-item" role="morph-tab">
-                        <button class="nav-link" id="morph-tab" data-bs-toggle="tab" data-bs-target="#morph" type="button" role="tab" aria-controls="morph" aria-selected="false">
-                            Morph
-                            <small class="text-muted">(Morph)</small>
+                    <li class="nav-item" role="reputation">
+                        <button class="nav-link" id="reputation-tab" data-bs-toggle="tab" data-bs-target="#reputation" type="button" role="tab" aria-controls="reputation" aria-selected="false">
+                            R&eacute;putation
+                            <small class="text-muted">(Reputation)</small>
                         </button>
                     </li>
                 </ul>
@@ -246,50 +246,278 @@
                         <div class="row py-5 px-5">
                             <table class="table table-striped table-hover">
                                 <thead>
-                                <tr>
-                                    <th scope="col">Comp&eacute;tences</th>
-                                    <th scope="col">Aptitudes</th>
-                                    <th scope="col">Type</th>
-                                    <th scope="col">Total</th>
-                                </tr>
+                                    <tr>
+                                        <th scope="col">Comp&eacute;tences</th>
+                                        <th scope="col">Aptitudes</th>
+                                        <th scope="col">Type</th>
+                                        <th scope="col">Total</th>
+                                    </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <th scope="row">
-                                        Athl&eacute;tisme
-                                        <small class="text-muted">(Athletics)</small>
-                                    </th>
-                                    <td>SOM</td>
-                                    <td>
-                                        Physique
-                                        <small class="text-muted">(Physical)</small>
-                                    </td>
-                                    <td>40</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        Comp&eacute;tence exotique
-                                        <small class="text-muted">(Exotic Skill)</small>
-                                    </th>
-                                    <td>-</td>
-                                    <td>
-                                        Domaine
-                                        <small class="text-muted">(Field)</small>
-                                    </td>
-                                    <td>30</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        Tromper
-                                        <small class="text-muted">(Deceive)</small>
-                                    </th>
-                                    <td>SAV</td>
-                                    <td>
-                                        Social
-                                        <small class="text-muted">(Social)</small>
-                                    </td>
-                                    <td>30</td>
-                                </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            Arme &agrave; feu
+                                            <small class="text-muted">(Guns)</small>
+                                        </th>
+                                        <td>REF</td>
+                                        <td>
+                                            Combat
+                                            <small class="text-muted">(Combat)</small>
+                                        </td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            Athl&eacute;tisme
+                                            <small class="text-muted">(Athletics)</small>
+                                        </th>
+                                        <td>SOM</td>
+                                        <td>
+                                            Physique
+                                            <small class="text-muted">(Physical)</small>
+                                        </td>
+                                        <td>40</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            Chute libre
+                                            <small class="text-muted">(Free Fall)</small>
+                                        </th>
+                                        <td>SOM</td>
+                                        <td>
+                                            Physique
+                                            <small class="text-muted">(Physical)</small>
+                                        </td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            Comp&eacute;tence exotique
+                                            <small class="text-muted">(Exotic Skill)</small>
+                                        </th>
+                                        <td>-</td>
+                                        <td>
+                                            Domaine
+                                            <small class="text-muted">(Field)</small>
+                                        </td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            Esquive
+                                            <small class="text-muted">(Fray)</small>
+                                        </th>
+                                        <td>REF</td>
+                                        <td>
+                                            Combat
+                                            <small class="text-muted">(Combat)</small>
+                                        </td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            Infiltration
+                                            <small class="text-muted">(Infiltrate)</small>
+                                        </th>
+                                        <td>REF</td>
+                                        <td>
+                                            Physique
+                                            <small class="text-muted">(Physical)</small>
+                                        </td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            Infosec
+                                            <small class="text-muted">(Infosec)</small>
+                                        </th>
+                                        <td>COG</td>
+                                        <td>
+                                            Technique
+                                            <small class="text-muted">(Technical)</small>
+                                        </td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            Interface
+                                            <small class="text-muted">(Interface)</small>
+                                        </th>
+                                        <td>COG</td>
+                                        <td>
+                                            Technique
+                                            <small class="text-muted">(Technical)</small>
+                                        </td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            Kin&eacute;sique
+                                            <small class="text-muted">(Kinesics)</small>
+                                        </th>
+                                        <td>SAV</td>
+                                        <td>
+                                            Social
+                                            <small class="text-muted">(Social)</small>
+                                        </td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            Mat&eacute;riel
+                                            <small class="text-muted">(Hardware)</small>
+                                        </th>
+                                        <td>COG</td>
+                                        <td>
+                                            Domaine, Technique
+                                            <small class="text-muted">(Field, Technical)</small>
+                                        </td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            M&eacute;decine
+                                            <small class="text-muted">(Medecine)</small>
+                                        </th>
+                                        <td>COG</td>
+                                        <td>
+                                            Domaine, Technique
+                                            <small class="text-muted">(Field, Technical)</small>
+                                        </td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            M&ecirc;l&eacute;e
+                                            <small class="text-muted">(Melee)</small>
+                                        </th>
+                                        <td>SOM</td>
+                                        <td>
+                                            Combat
+                                            <small class="text-muted">(Combat)</small>
+                                        </td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            Percevoir
+                                            <small class="text-muted">(Perceive)</small>
+                                        </th>
+                                        <td>INT</td>
+                                        <td>
+                                            Mental
+                                            <small class="text-muted">(Mental)</small>
+                                        </td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            Persuasion
+                                            <small class="text-muted">(Persuasion)</small>
+                                        </th>
+                                        <td>SAV</td>
+                                        <td>
+                                            Social
+                                            <small class="text-muted">(Social)</small>
+                                        </td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            Piloter
+                                            <small class="text-muted">(Pilot)</small>
+                                        </th>
+                                        <td>REF</td>
+                                        <td>
+                                            Domaine, V&eacute;hicule
+                                            <small class="text-muted">(Field, Vehicle)</small>
+                                        </td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            Programmer
+                                            <small class="text-muted">(Program)</small>
+                                        </th>
+                                        <td>COG</td>
+                                        <td>
+                                            Technique
+                                            <small class="text-muted">(Technical)</small>
+                                        </td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            Provoquer
+                                            <small class="text-muted">(Provoke)</small>
+                                        </th>
+                                        <td>SAV</td>
+                                        <td>
+                                            Social
+                                            <small class="text-muted">(Social)</small>
+                                        </td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            Psychologie
+                                            <small class="text-muted">(Psi)</small>
+                                        </th>
+                                        <td>WIL</td>
+                                        <td>
+                                            Mental, Psychologie
+                                            <small class="text-muted">(Mental, Psi)</small>
+                                        </td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            Recherche
+                                            <small class="text-muted">(Research)</small>
+                                        </th>
+                                        <td>INT</td>
+                                        <td>
+                                            Technique
+                                            <small class="text-muted">(Technical)</small>
+                                        </td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            Savoir
+                                            <small class="text-muted">(Know)</small>
+                                        </th>
+                                        <td>COG/INT</td>
+                                        <td>
+                                            Domaine, Savoir
+                                            <small class="text-muted">(Field, Know)</small>
+                                        </td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            Survie
+                                            <small class="text-muted">(Survival)</small>
+                                        </th>
+                                        <td>INT</td>
+                                        <td>
+                                            Mental
+                                            <small class="text-muted">(Mental)</small>
+                                        </td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            Tromper
+                                            <small class="text-muted">(Deceive)</small>
+                                        </th>
+                                        <td>SAV</td>
+                                        <td>
+                                            Social
+                                            <small class="text-muted">(Social)</small>
+                                        </td>
+                                        <td>30</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -298,6 +526,12 @@
                         <div class="row py-5 px-5">
                             &Eacute;quipement
                         </div>
+                    </div>
+                    <div class="tab-pane fade border-end border-bottom border-start bg-white" id="morph" role="tabpanel" aria-labelledby="morph-tab">
+                        <div class="row py-5 px-5">Morph</div>
+                    </div>
+                    <div class="tab-pane fade border-end border-bottom border-start bg-white" id="notes" role="tabpanel" aria-labelledby="notes-tab">
+                        <div class="row py-5 px-5">Notes</div>
                     </div>
                     <div class="tab-pane fade border-end border-bottom border-start bg-white" id="reputation" role="tabpanel" aria-labelledby="reputation-tab">
                         <div class="row py-5 px-5">
@@ -430,12 +664,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="tab-pane fade border-end border-bottom border-start bg-white" id="notes" role="tabpanel" aria-labelledby="notes-tab">
-                        <div class="row py-5 px-5">Notes</div>
-                    </div>
-                    <div class="tab-pane fade border-end border-bottom border-start bg-white" id="morph" role="tabpanel" aria-labelledby="morph-tab">
-                        <div class="row py-5 px-5">Morph</div>
                     </div>
                 </div>
             </main>
