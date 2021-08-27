@@ -669,7 +669,65 @@
                         <div class="row py-5 px-5">Morph</div>
                     </div>
                     <div class="tab-pane fade border-end border-bottom border-start bg-white" id="notes" role="tabpanel" aria-labelledby="notes-tab">
-                        <div class="row py-5 px-5">Notes</div>
+                        <div class="row py-5 px-5">
+                            <div class="col-md-4">
+                                <label for="last-backup-entry" class="form-label">Derni&egrave;re sauvegarde</label>
+                                <input type="text" class="form-control" id="last-backup-entry" placeholder="Last Backup Entry" value="" required>
+                                <div class="invalid-feedback">
+                                    Please select a valid the last backup entry.
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="backup-date" class="form-label">Date</label>
+                                <input type="date" class="form-control" id="backup-date" value="" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid backup date.
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="backup-storage-location" class="form-label">Lieu de stockage</label>
+                                <input type="text" class="form-control" id="backup-storage-location" placeholder="Storage Location" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid storage location is required.
+                                </div>
+                            </div>
+                            <div class="col-md-6 my-4">
+                                <label for="mental-edits" class="form-label">Version/Chirurgie psychique</label>
+                                <input type="text" class="form-control" id="mental-edits" placeholder="Mental Edits/Psychosurgery" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid mental edits/psychosurgery data is required.
+                                </div>
+                            </div>
+                            <div class="col-md-6 my-4">
+                                <label for="ongoing-effects" class="form-label">Effets ind&eacute;sirables</label>
+                                <input type="text" class="form-control" id="ongoing-effects" placeholder="Ongoing Effects/Conditions" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid ongoing effects/conditions are required.
+                                </div>
+                            </div>
+                            <hr class="my-4" />
+                            <div class="col-sm-12">
+                                <label for="motivations-goals" class="form-label">Objectifs</label>
+                                <textarea class="form-control" id="motivations-goals" rows="3" placeholder="Motivation Goals"></textarea>
+                                <div class="invalid-feedback">
+                                    Valid motivation goals are required.
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mt-4">
+                                <label for="active-forks" class="form-label">Copies actives</label>
+                                <textarea class="form-control" id="active-forks" rows="5" placeholder="Type - When Made - Notes"></textarea>
+                                <div class="invalid-feedback">
+                                    Valid active forks are required.
+                                </div>
+                            </div>
+                            <div class="col-sm-12 my-4">
+                                <label for="additional-notes" class="form-label">Notes additionnelles</label>
+                                <textarea class="form-control" id="additional-notes" rows="7" placeholder="Additional Notes"></textarea>
+                                <div class="invalid-feedback">
+                                    Valid additional notes are required.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-pane fade border-end border-bottom border-start bg-white" id="reputation" role="tabpanel" aria-labelledby="reputation-tab">
                         <div class="row py-5 px-5">
