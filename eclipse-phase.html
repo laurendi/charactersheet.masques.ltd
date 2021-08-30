@@ -210,38 +210,159 @@
                     <hr class="my-4" />
                 </div>
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="async">
+                        <button class="nav-link" id="async-tab" data-bs-toggle="tab" data-bs-target="#async-id" type="button" role="tab" aria-controls="async-tab" aria-selected="false">
+                            Async<br>
+                            <small class="text-muted">(Async)</small>
+                        </button>
+                    </li>
                     <li class="nav-item" role="skills">
-                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
-                            Comp&eacute;tences
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home-tab" aria-selected="true">
+                            Comp&eacute;tences<br>
                             <small class="text-muted">(Skills)</small>
                         </button>
                     </li>
                     <li class="nav-item" role="gears">
-                        <button class="nav-link" id="gears-tab" data-bs-toggle="tab" data-bs-target="#gears" type="button" role="tab" aria-controls="gears" aria-selected="false">
-                            &Eacute;quipement
+                        <button class="nav-link" id="gears-tab" data-bs-toggle="tab" data-bs-target="#gears-id" type="button" role="tab" aria-controls="gears" aria-selected="false">
+                            &Eacute;quipement<br>
                             <small class="text-muted">(Gears)</small>
                         </button>
                     </li>
-                    <li class="nav-item" role="morph-tab">
-                        <button class="nav-link" id="morph-tab" data-bs-toggle="tab" data-bs-target="#morph" type="button" role="tab" aria-controls="morph" aria-selected="false">
-                            Morph
+                    <li class="nav-item" role="fake-id">
+                        <button class="nav-link" id="fake-id-tab" data-bs-toggle="tab" data-bs-target="#fake-id" type="button" role="tab" aria-controls="fake-id-tab" aria-selected="false">
+                            Fausse identit&eacute;<br>
+                            <small class="text-muted">(Fake Id)</small>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="morph">
+                        <button class="nav-link" id="morph-tab" data-bs-toggle="tab" data-bs-target="#morph-id" type="button" role="tab" aria-controls="morph" aria-selected="false">
+                            Morph<br>
                             <small class="text-muted">(Morph)</small>
                         </button>
                     </li>
-                    <li class="nav-item" role="notes-tab">
-                        <button class="nav-link" id="notes-tab" data-bs-toggle="tab" data-bs-target="#notes" type="button" role="tab" aria-controls="notes" aria-selected="false">
-                            Notes
+                    <li class="nav-item" role="muse">
+                        <button class="nav-link" id="muse-tab" data-bs-toggle="tab" data-bs-target="#muse-id" type="button" role="tab" aria-controls="muse-tab" aria-selected="false">
+                            Muse<br>
+                            <small class="text-muted">(Muse)</small>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="notes">
+                        <button class="nav-link" id="notes-tab" data-bs-toggle="tab" data-bs-target="#notes-id" type="button" role="tab" aria-controls="notes-tab" aria-selected="false">
+                            Notes<br>
                             <small class="text-muted">(Notes)</small>
                         </button>
                     </li>
                     <li class="nav-item" role="reputation">
-                        <button class="nav-link" id="reputation-tab" data-bs-toggle="tab" data-bs-target="#reputation" type="button" role="tab" aria-controls="reputation" aria-selected="false">
-                            R&eacute;putation
+                        <button class="nav-link" id="reputation-tab" data-bs-toggle="tab" data-bs-target="#reputation-id" type="button" role="tab" aria-controls="reputation-tab" aria-selected="false">
+                            R&eacute;putation<br>
                             <small class="text-muted">(Reputation)</small>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="vehicule">
+                        <button class="nav-link" id="vehicle-tab" data-bs-toggle="tab" data-bs-target="#vehicle-id" type="button" role="tab" aria-controls="vehicle-tab" aria-selected="false">
+                            V&eacute;hicule<br>
+                            <small class="text-muted">(Vehicle)</small>
                         </button>
                     </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade border-end border-bottom border-start bg-white" id="async-id" role="tabpanel" aria-labelledby="async-tab">
+                        <div class="row py-5 px-5">
+                            <div class="col-md-4">
+                                <label for="sub-strain" class="form-label">Sous-syst&egrave;me</label>
+                                <input type="text" class="form-control" id="sub-strain" placeholder="Sub-Strain" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid sub-strain is required.
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-4">
+                                <label for="infection-rating" class="form-label">Niveau de contamination</label>
+                                <input type="number" class="form-control" id="infection-rating" placeholder="Infection Rating" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid infection rating is required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row px-5">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                <tr>
+                                    <th scope="col">
+                                        Faits marquants<br>
+                                        <small class="text-muted">(Influence Events)</small>
+                                    </th>
+                                    <th scope="col">
+                                        Description<br>
+                                        <small class="text-muted">(Description)</small>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td><small class="text-muted">(Physical Damage, Take DV 1d6)</small></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td><small class="text-muted">(Physical Damage, Take DV 1d6)</small></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td><small class="text-muted">(Physical Damage, Take DV 1d6)</small></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-striped table-hover my-5">
+                                <thead>
+                                <tr>
+                                    <th scope="col">
+                                        Coup d&apos;&eacute;clat<br>
+                                        <small class="text-muted">(Sleights Type)</small>
+                                    </th>
+                                    <th scope="col">
+                                        Action<br>
+                                        <small class="text-muted">(Action)</small>
+                                    </th>
+                                    <th scope="col">
+                                        Dur&eacute;e<br>
+                                        <small class="text-muted">(Duration)</small>
+                                    </th>
+                                    <th scope="col">
+                                        Mode op&eacute;ratoire<br>
+                                        <small class="text-muted">(Infection Mod)</small>
+                                    </th>
+                                    <th scope="col">
+                                        Effets<br>
+                                        <small class="text-muted">(Effects)</small>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">-</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">-</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">-</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                     <div class="tab-pane fade show active border-end border-bottom border-start bg-white" id="home" role="tabpanel" aria-labelledby="home-tab">
                         <div class="row">
                             <div class="row py-5 px-5">
@@ -536,7 +657,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade border-end border-bottom border-start bg-white" id="gears" role="tabpanel" aria-labelledby="gears-tab">
+                    <div class="tab-pane fade border-end border-bottom border-start bg-white" id="gears-id" role="tabpanel" aria-labelledby="gears-tab">
                         <div class="row py-5 px-5">
                             <table class="table table-striped table-hover my-4">
                                 <thead>
@@ -665,20 +786,23 @@
                             </table>
                         </div>
                     </div>
-                    <div class="tab-pane fade border-end border-bottom border-start bg-white" id="morph" role="tabpanel" aria-labelledby="morph-tab">
+                    <div class="tab-pane fade border-end border-bottom border-start bg-white" id="fake-id" role="tabpanel" aria-labelledby="fake-id-tab">
+                        Fake ID
+                    </div>
+                    <div class="tab-pane fade border-end border-bottom border-start bg-white" id="morph-id" role="tabpanel" aria-labelledby="morph-tab">
                         <div class="row py-5 px-5">
                             <div class="col-md-4">
-                                <label for="damage-taken" class="form-label">xxxxx</label>
-                                <input type="number" class="form-control" id="damage-taken" placeholder="Damage Taken" value="" required>
+                                <label for="morph-name" class="form-label">Nom</label>
+                                <input type="text" class="form-control" id="morph-name" placeholder="Morph Name" value="" required>
                                 <div class="invalid-feedback">
-                                    Valid damage taken is required.
+                                    Valid morph name is required.
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <label for="wounds-taken" class="form-label">xxxxx</label>
-                                <input type="number" class="form-control" id="wounds-taken" placeholder="Wounds Taken" value="" required>
+                                <label for="mp-cost" class="form-label">Co&ucirc;t</label>
+                                <input type="number" class="form-control" id="mp-cost" placeholder="MP Cost" value="" required>
                                 <div class="invalid-feedback">
-                                    Valid wounds taken is required.
+                                    Valid MP Cost is required.
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -699,6 +823,48 @@
                                     <label class="form-check-label" for="recharge-long">
                                         R&eacute;cuparation compl&egrave;te
                                     </label>
+                                </div>
+                            </div>
+                            <div class="col-md-4 my-4">
+                                <label for="damage-taken" class="form-label">D&eacute;g&acirc;ts subis</label>
+                                <input type="number" class="form-control" id="damage-taken" placeholder="Damage Taken" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid damage taken is required.
+                                </div>
+                            </div>
+                            <div class="col-md-4 my-4">
+                                <label for="wounds-taken" class="form-label">Blessures subies</label>
+                                <input type="number" class="form-control" id="wounds-taken" placeholder="Wounds Taken" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid wounds taken is required.
+                                </div>
+                            </div>
+                            <div class="col-md-4 my-4">
+                                <label for="movement-rate" class="form-label">D&eacute;placement</label>
+                                <input type="number" class="form-control" id="movement-rate" placeholder="Movement Rate" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid movement rate is required.
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <label for="ware" class="form-label">Implants</label>
+                                <textarea class="form-control" id="ware" rows="2" placeholder="Ware"></textarea>
+                                <div class="invalid-feedback">
+                                    Valid ware is required.
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <label for="morph-traits" class="form-label">Aspects</label>
+                                <textarea class="form-control" id="morph-traits" rows="2" placeholder="Morph Traits"></textarea>
+                                <div class="invalid-feedback">
+                                    Valid morph traits is required.
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <label for="morph-notes" class="form-label">Notes</label>
+                                <textarea class="form-control" id="morph-notes" rows="2" placeholder="Notes"></textarea>
+                                <div class="invalid-feedback">
+                                    Valid morph note is required.
                                 </div>
                             </div>
                             <hr class="my-4" />
@@ -760,7 +926,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade border-end border-bottom border-start bg-white" id="notes" role="tabpanel" aria-labelledby="notes-tab">
+                    <div class="tab-pane fade border-end border-bottom border-start bg-white" id="muse-id" role="tabpanel" aria-labelledby="muse-tab">
+                        Muse
+                    </div>
+                    <div class="tab-pane fade border-end border-bottom border-start bg-white" id="notes-id" role="tabpanel" aria-labelledby="notes-tab">
                         <div class="row py-5 px-5">
                             <div class="col-md-4">
                                 <label for="last-backup-entry" class="form-label">Derni&egrave;re sauvegarde</label>
@@ -821,7 +990,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade border-end border-bottom border-start bg-white" id="reputation" role="tabpanel" aria-labelledby="reputation-tab">
+                    <div class="tab-pane fade border-end border-bottom border-start bg-white" id="reputation-id" role="tabpanel" aria-labelledby="reputation-tab">
                         <div class="row py-5 px-5">
                             <!-- @-Rep, C-Rep, F-Rep & G-Rep -->
                             <label class="form-check-label col-md-3" for="a-rep1">&commat;-Rep</label>
@@ -952,6 +1121,9 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="tab-pane fade border-end border-bottom border-start bg-white" id="vehicle-id" role="tabpanel" aria-labelledby="vehicle-tab">
+                        V&eacute;hicule
                     </div>
                 </div>
             </main>
