@@ -216,6 +216,12 @@
                             <small class="text-muted">(Async)</small>
                         </button>
                     </li>
+                    <li class="nav-item" role="vehicule">
+                        <button class="nav-link" id="vehicle-tab" data-bs-toggle="tab" data-bs-target="#vehicle-id" type="button" role="tab" aria-controls="vehicle-tab" aria-selected="false">
+                            Bot/V&eacute;hicule<br>
+                            <small class="text-muted">(Vehicle)</small>
+                        </button>
+                    </li>
                     <li class="nav-item" role="skills">
                         <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home-tab" aria-selected="true">
                             Comp&eacute;tences<br>
@@ -230,7 +236,7 @@
                     </li>
                     <li class="nav-item" role="fake-id">
                         <button class="nav-link" id="fake-id-tab" data-bs-toggle="tab" data-bs-target="#fake-id" type="button" role="tab" aria-controls="fake-id-tab" aria-selected="false">
-                            Fausse identit&eacute;<br>
+                            Fausses identit&eacute;s<br>
                             <small class="text-muted">(Fake Id)</small>
                         </button>
                     </li>
@@ -256,12 +262,6 @@
                         <button class="nav-link" id="reputation-tab" data-bs-toggle="tab" data-bs-target="#reputation-id" type="button" role="tab" aria-controls="reputation-tab" aria-selected="false">
                             R&eacute;putation<br>
                             <small class="text-muted">(Reputation)</small>
-                        </button>
-                    </li>
-                    <li class="nav-item" role="vehicule">
-                        <button class="nav-link" id="vehicle-tab" data-bs-toggle="tab" data-bs-target="#vehicle-id" type="button" role="tab" aria-controls="vehicle-tab" aria-selected="false">
-                            V&eacute;hicule<br>
-                            <small class="text-muted">(Vehicle)</small>
                         </button>
                     </li>
                 </ul>
@@ -361,6 +361,99 @@
                                 </tr>
                                 </tbody>
                             </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade border-end border-bottom border-start bg-white" id="vehicle-id" role="tabpanel" aria-labelledby="vehicle-tab">
+                        <div class="row py-5 px-5">
+                            <div class="col-md-4">
+                                <label for="bot-vehicle-name" class="form-label">Bot/V&eacute;hicule</label>
+                                <input type="text" class="form-control" id="bot-vehicle-name" placeholder="Bot/Vehicle" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid bot/vehicle name is required.
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="bot-vehicle-vigor" class="form-label">Vigueur</label>
+                                <input type="number" class="form-control" id="bot-vehicle-vigor" placeholder="Vigor" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid bot/vehicle vigor is required.
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="bot-vehicle-flex" class="form-label">Flexibilit&eacute;</label>
+                                <input type="number" class="form-control" id="bot-vehicle-flex" placeholder="Flex" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid bot/vehicle flex is required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5 px-5">
+                            <div class="col-md-4">
+                                <label for="bot-vehicle-damage" class="form-label">D&eacute;g&acirc;ts</label>
+                                <input type="number" class="form-control" id="bot-vehicle-damage" placeholder="Damage" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid bot/vehicle damage is required.
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="bot-vehicle-wounds" class="form-label">Blessures</label>
+                                <input type="number" class="form-control" id="bot-vehicle-wounds" placeholder="Wounds" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid bot/vehicle wounds is required.
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="bot-vehicle-armor" class="form-label">Blindage</label>
+                                <input type="number" class="form-control" id="bot-vehicle-armor" placeholder="Armor" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid bot/vehicle armor is required.
+                                </div>
+                            </div>
+                            <hr class="my-4">
+                            <div class="col-md-4">
+                                <label for="bot-vehicle-wt" class="form-label">WT</label>
+                                <input type="number" class="form-control" id="bot-vehicle-wt" placeholder="WT" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid bot/vehicle WT is required.
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="bot-vehicle-dur" class="form-label">DUR</label>
+                                <input type="number" class="form-control" id="bot-vehicle-dur" placeholder="DUR" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid bot/vehicle DUR is required.
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="bot-vehicle-dr" class="form-label">DR</label>
+                                <input type="number" class="form-control" id="bot-vehicle-dr" placeholder="DR" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid bot/vehicle DR is required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5 px-5">
+                            <div class="col-md-4">
+                                <label for="bot-vehicle-size" class="form-label">Dimension</label>
+                                <input type="number" class="form-control" id="bot-vehicle-size" placeholder="Size" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid bot/vehicle size is required.
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="bot-vehicle-movement" class="form-label">Mouvement</label>
+                                <input type="number" class="form-control" id="bot-vehicle-movement" placeholder="Movement" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid bot/vehicle movement is required.
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="bot-vehicle-ware" class="form-label">Composants</label>
+                                <input type="text" class="form-control" id="bot-vehicle-ware" placeholder="Ware" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid bot/vehicle ware is required.
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="tab-pane fade show active border-end border-bottom border-start bg-white" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -787,7 +880,279 @@
                         </div>
                     </div>
                     <div class="tab-pane fade border-end border-bottom border-start bg-white" id="fake-id" role="tabpanel" aria-labelledby="fake-id-tab">
-                        Fake ID
+                        <div class="row py-5 px-5">
+                            <div class="col-md-12 mb-4">
+                                <label for="fake-reputation-name-1" class="form-label">Identit&eacute; #1</label>
+                                <input type="text" class="form-control" id="fake-reputation-name-1" placeholder="Name" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid name is required.
+                                </div>
+                            </div>
+                            <!-- @-Rep, C-Rep, F-Rep & G-Rep -->
+                            <label class="form-check-label col-md-3" for="fake-a-rep1">&commat;-Rep</label>
+                            <label class="form-check-label col-md-3" for="fake-c-rep1">C-Rep</label>
+                            <label class="form-check-label col-md-3" for="fake-f-rep1">F-Rep</label>
+                            <label class="form-check-label col-md-3" for="fake-g-rep1">G-Rep</label>
+                            <div class="col-md-3">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-a-rep1" aria-label="a-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-a-rep2" aria-label="a-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-a-rep3" aria-label="a-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-a-rep4" aria-label="a-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-a-rep5" aria-label="a-rep">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-c-rep1" aria-label="c-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-c-rep2" aria-label="c-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-a-cep3" aria-label="c-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-a-cep4" aria-label="c-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-a-cep5" aria-label="c-rep">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-f-rep1" aria-label="f-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-f-rep2" aria-label="f-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-f-rep3" aria-label="f-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-f-rep4" aria-label="f-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-f-rep5" aria-label="f-rep">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-g-rep1" aria-label="g-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-g-rep2" aria-label="g-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-g-cep3" aria-label="g-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-g-cep4" aria-label="g-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-g-cep5" aria-label="g-rep">
+                                </div>
+                            </div>
+                            <!-- I-Rep, R-Rep & X-Rep -->
+                            <label class="form-check-label col-md-3" for="fake-i-rep1">I-Rep</label>
+                            <label class="form-check-label col-md-3" for="fake-r-rep1">R-Rep</label>
+                            <label class="form-check-label col-md-6" for="fake-x-rep1">X-Rep</label>
+                            <div class="col-md-3">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-i-rep1" aria-label="i-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-i-rep2" aria-label="i-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-i-rep3" aria-label="i-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-i-rep4" aria-label="i-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-i-rep5" aria-label="i-rep">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-r-rep1" aria-label="r-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-r-rep2" aria-label="r-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-r-cep3" aria-label="r-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-r-cep4" aria-label="r-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-r-cep5" aria-label="r-rep">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-x-rep1" aria-label="x-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-x-rep2" aria-label="x-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-x-cep3" aria-label="x-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-x-cep4" aria-label="x-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-x-cep5" aria-label="x-rep">
+                                </div>
+                            </div>
+                            <hr class="my-4">
+                            <div class="col-md-12 mb-4">
+                                <label for="fake-reputation-name-2" class="form-label">Identit&eacute; #2</label>
+                                <input type="text" class="form-control" id="fake-reputation-name-2" placeholder="Name" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid name is required.
+                                </div>
+                            </div>
+                            <!-- @-Rep, C-Rep, F-Rep & G-Rep -->
+                            <label class="form-check-label col-md-3" for="fake-2-a-rep1">&commat;-Rep</label>
+                            <label class="form-check-label col-md-3" for="fake-2-c-rep1">C-Rep</label>
+                            <label class="form-check-label col-md-3" for="fake-2-f-rep1">F-Rep</label>
+                            <label class="form-check-label col-md-3" for="fake-2-g-rep1">G-Rep</label>
+                            <div class="col-md-3">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-a-rep1" aria-label="a-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-a-rep2" aria-label="a-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-a-rep3" aria-label="a-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-a-rep4" aria-label="a-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-a-rep5" aria-label="a-rep">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-c-rep1" aria-label="c-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-c-rep2" aria-label="c-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-a-cep3" aria-label="c-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-a-cep4" aria-label="c-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-a-cep5" aria-label="c-rep">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-f-rep1" aria-label="f-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-f-rep2" aria-label="f-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-f-rep3" aria-label="f-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-f-rep4" aria-label="f-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-f-rep5" aria-label="f-rep">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-g-rep1" aria-label="g-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-g-rep2" aria-label="g-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-g-cep3" aria-label="g-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-g-cep4" aria-label="g-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-g-cep5" aria-label="g-rep">
+                                </div>
+                            </div>
+                            <!-- I-Rep, R-Rep & X-Rep -->
+                            <label class="form-check-label col-md-3" for="fake-2-i-rep1">I-Rep</label>
+                            <label class="form-check-label col-md-3" for="fake-2-r-rep1">R-Rep</label>
+                            <label class="form-check-label col-md-6" for="fake-2-x-rep1">X-Rep</label>
+                            <div class="col-md-3">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-i-rep1" aria-label="i-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-i-rep2" aria-label="i-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-i-rep3" aria-label="i-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-i-rep4" aria-label="i-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-i-rep5" aria-label="i-rep">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-r-rep1" aria-label="r-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-r-rep2" aria-label="r-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-r-cep3" aria-label="r-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-r-cep4" aria-label="r-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-r-cep5" aria-label="r-rep">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-x-rep1" aria-label="x-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-x-rep2" aria-label="x-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-x-cep3" aria-label="x-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-x-cep4" aria-label="x-rep">
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="fake-2-x-cep5" aria-label="x-rep">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-pane fade border-end border-bottom border-start bg-white" id="morph-id" role="tabpanel" aria-labelledby="morph-tab">
                         <div class="row py-5 px-5">
@@ -1121,9 +1486,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="tab-pane fade border-end border-bottom border-start bg-white" id="vehicle-id" role="tabpanel" aria-labelledby="vehicle-tab">
-                        V&eacute;hicule
                     </div>
                 </div>
             </main>
